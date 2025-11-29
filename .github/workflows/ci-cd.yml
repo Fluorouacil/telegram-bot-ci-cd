@@ -50,7 +50,7 @@ jobs:
           key: ${{ secrets.SSH_KEY }}
           port: ${{ secrets.SSH_PORT || 22 }}
           script: |
-            cd /home/devops/telegram-bot-ci-cd
+            cd /home/user/telegram-bot-ci-cd-Borodulin
             git pull
             docker compose pull || true
             docker compose up -d --build
