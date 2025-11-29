@@ -13,7 +13,6 @@ async def cmd_start(message: types.Message):
     await message.answer(
         "Привет! Я DevOps CI/CD бот.\n"
         "Отправь мне любое сообщение – я сохраню его в базу данных.\n"
-        "Команда /last покажет последние сохранённые сообщения."
     )
 
 @dp.message(Command("last"))
