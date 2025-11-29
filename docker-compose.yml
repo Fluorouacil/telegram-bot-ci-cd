@@ -21,12 +21,12 @@ services:
     depends_on:
       - db
     environment:
-      BOT_TOKEN: "8499306136:AAEoWf8WFjdR5zsowrV7VVVPermWFhBoSeQ"
+      BOT_TOKEN: ${BOT_TOKEN}
       DB_HOST: db
       DB_PORT: 3306
       DB_USER: bot_user
       DB_PASSWORD: bot_password
-      DB_NAME: telegram_bot_db
+      DB_NAME: telegram_bot_db_borodulin
 
 volumes:
   db_data: 
